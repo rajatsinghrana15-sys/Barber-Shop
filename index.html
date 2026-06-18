@@ -37,6 +37,61 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- Help-Button -->
+    <button onclick="openPopup()" class="help-btn">? How to Book</button>
+
+    <div id="helpPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 style="color: #ff5722; text-align: center; margin-bottom: 20px">
+          How to Manage Your Appointment
+        </h2>
+
+        <h4 style="color: #ff5722">1. How to Book a New Appointment</h4>
+        <ol style="margin-left: 20px; margin-bottom: 15px">
+          <li>
+            <strong>Choose Service:</strong> Click the "Book Appointment"
+            button.
+          </li>
+          <li>
+            <strong>Select Time:</strong> Choose your preferred date and time
+            from the calendar.
+          </li>
+          <li>
+            <strong>Fill Details:</strong> Enter your name, phone number, and
+            email.
+          </li>
+          <li>
+            <strong>Submit:</strong> Click the "Schedule Event" button. You will
+            receive a confirmation email immediately.
+          </li>
+        </ol>
+
+        <h4 style="color: #ff5722">2. How to Reschedule or Cancel</h4>
+        <p>If your plans change, you can easily manage your booking:</p>
+        <ul style="margin-left: 20px; margin-bottom: 15px">
+          <li>
+            <strong>Find your Email:</strong> Open the confirmation email you
+            received when you booked.
+          </li>
+          <li>
+            <strong>Access Options:</strong> Scroll down to find the
+            <strong>"Reschedule"</strong> or <strong>"Cancel"</strong> buttons.
+          </li>
+          <li>
+            <strong>Update:</strong> Click the button to select a new time or
+            cancel your appointment entirely.
+          </li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 20px; font-style: italic">
+          Still having trouble?
+          <a href="https://wa.me/YOUR_NUMBER" style="color: #ff5722"
+            >Contact us on WhatsApp</a
+          >
+        </p>
+      </div>
+    </div>
 
     <section class="hero" id="page-1">
       <div class="hero-content">
@@ -47,30 +102,6 @@
           style game.
         </p>
         <a href="appointment.html" class="cta-btn">Book Appointment</a>
-        <div class="popup-content" style="text-align: left; font-size: 15px; line-height: 1.6; color: #fff;">
-    <span class="close-btn" onclick="closePopup()" style="color: #ff5722; font-size: 30px; float: right; cursor: pointer;">&times;</span>
-    <h2 style="color: #ff5722; text-align: center; margin-bottom: 20px;">How to Book</h2>
-    
-    <h4 style="color: #ff5722;">1. How to book an appointment?</h4>
-    <ol style="margin-left: 20px; margin-bottom: 15px;">
-        <li><strong>Select Service:</strong> Click on the "Book Appointment" button.</li>
-        <li><strong>Choose Date & Time:</strong> Select your preferred date and time from the calendar.</li>
-        <li><strong>Enter Details:</strong> Fill in your name, phone number, and email address.</li>
-        <li><strong>Confirm:</strong> Click "Schedule Event." Your appointment is now booked!</li>
-    </ol>
-
-    <h4 style="color: #ff5722;">2. How to Reschedule or Cancel?</h4>
-    <p>If you need to change your time or cancel the booking, follow these steps:</p>
-    <ul style="margin-left: 20px; margin-bottom: 15px;">
-        <li><strong>Check your Email:</strong> Open the confirmation email you received after booking.</li>
-        <li><strong>Use the Buttons:</strong> You will find <strong>"Reschedule"</strong> and <strong>"Cancel"</strong> buttons inside that email.</li>
-        <li><strong>Make Changes:</strong> Simply click the button to select a new time or cancel your booking instantly.</li>
-    </ul>
-
-    <p style="text-align: center; margin-top: 20px; font-style: italic;">
-        If you face any issues, please feel free to call or WhatsApp us!
-    </p>
-</div>
       </div>
       <div class="hero-image">
         <img
@@ -111,7 +142,7 @@
       <div class="services-container">
         <!-- Service Card 1 -->
         <div class="service-card">
-          <img src="photos/first-img.jpg" alt="Classic Cut" />
+          <img src="photos/first-img.png" alt="Classic Cut" />
           <h3>Classic Taper</h3>
           <p>
             A timeless, sharp, and professional look that never goes out of
@@ -121,7 +152,7 @@
         </div>
         <!-- Service Card 2 -->
         <div class="service-card">
-          <img src="photos/second-img.jpg" alt="Beard Trim" />
+          <img src="photos/second-img.png" alt="Beard Trim" />
           <h3>Beard Sculpting</h3>
           <p>
             Precision trimming and shaping to keep your beard looking crisp and

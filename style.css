@@ -168,42 +168,82 @@ a {
   box-shadow: 0 15px 30px rgba(255, 87, 34, 0.5);
 }
 
-/* Help Button Style */
+/* --- Base Styles (Desktop First) --- */
 .help-btn {
-    padding: 10px 20px;
-    background: #444;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    background: #ff5722;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    margin-top: 10px;
+    font-weight: 600;
+    z-index: 99999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
 
-/* Popup Overlay */
 .popup {
     display: none;
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.8);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 100000;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
 }
 
 .popup-content {
-    background: #222;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 400px;
-    text-align: center;
-    color: white;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
     position: relative;
+    color: #fff;
 }
 
-.close-btn {
-    position: absolute;
-    top: 10px; right: 20px;
-    font-size: 24px; cursor: pointer; color: #ff5722;
+/* --- Media Queries (Responsiveness) --- */
+
+/* 1. Tablets (Width 768px se kam) */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+/* 2. Mobile (Width 480px se kam) */
+@media (max-width: 480px) {
+    .help-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .popup-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* 3. Small Mobile / Tiny Devices (Width 360px se kam) */
+@media (max-width: 360px) {
+    .help-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+    .popup-content {
+        width: 95%;
+        padding: 15px;
+    }
+    /* Font size chota karna */
+    .popup-content h2 { font-size: 1.2rem; }
+    .popup-content h4 { font-size: 1rem; }
 }
 
 .hero-image {
