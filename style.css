@@ -293,6 +293,10 @@ a {
 /* --- Responsive for Mobile --- */
 @media (max-width: 768px) {
   .hero {
+    background-image: url(photos/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
