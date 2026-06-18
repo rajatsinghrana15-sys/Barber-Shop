@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ole&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Airport</div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#page-1">Home</a></li>
+        <li><a href="#page-2">About</a></li>
+        <li><a href="#page-3">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="page-1">
+      <div class="hero-content">
+        <h1>Premium Grooming for the Modern Gentleman</h1>
+        <p>
+          Experience world-class haircuts, beard trims, and grooming services
+          tailored just for you. Book your appointment today and step up your
+          style game.
+        </p>
+        <a href="appointment.html" class="cta-btn">Book Appointment</a>
+        <!-- Help Button -->
+        <button onclick="openPopup()" class="help-btn">? How to Book</button>
+
+        <!-- The Popup -->
+        <div id="helpPopup" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>How to Book Your Session</h2>
+            <ol style="text-align: left; padding: 20px">
+              <li>Select the <strong>Service</strong> you want.</li>
+              <li>Pick a <strong>Date & Time</strong> from the calendar.</li>
+              <li>Enter your <strong>Name & Contact Info</strong>.</li>
+              <li>
+                Click <strong>Confirm</strong>—you'll get a confirmation email
+                instantly!
+              </li>
+            </ol>
+            <p>It's that simple! If you need help, call us directly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="photos/Barberman-on-transparent-background-.png"
+          alt="Barber Shop"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="page-2">
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+            alt="About Our Shop"
+          />
+        </div>
+        <div class="about-content">
+          <h2>Crafting Perfection Since 2015</h2>
+          <p>
+            At Airport, we believe a haircut is more than just a trim—it's an
+            experience. Our master barbers combine traditional techniques with
+            modern trends to ensure you leave our chair looking and feeling your
+            best.
+          </p>
+          <p>
+            Quality, precision, and a welcoming atmosphere are at the heart of
+            everything we do. Whether it's a classic shave or a contemporary
+            style, we have the expertise to deliver perfection.
+          </p>
+          <a href="learn-more.html" class="cta-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="page-3">
+      <h2 class="section-title">Our Signature Styles</h2>
+      <div class="services-container">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <img src="photos/first-img.jpg" alt="Classic Cut" />
+          <h3>Classic Taper</h3>
+          <p>
+            A timeless, sharp, and professional look that never goes out of
+            style.
+          </p>
+          <span class="price">$25</span>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <img src="photos/second-img.jpg" alt="Beard Trim" />
+          <h3>Beard Sculpting</h3>
+          <p>
+            Precision trimming and shaping to keep your beard looking crisp and
+            clean.
+          </p>
+          <span class="price">$15</span>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=400&q=80"
+            alt="Modern Fade"
+          />
+          <h3>Modern Fade</h3>
+          <p>
+            The latest trends with seamless transitions for a bold and fresh
+            appearance.
+          </p>
+          <span class="price">$30</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Visit Our Shop</h3>
+          <p>📍 123 Grooming Street, Style City, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️ hello@barbershop.com</p>
+          <br />
+          <h3>Opening Hours</h3>
+          <p>Mon - Sat: 10:00 AM - 9:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

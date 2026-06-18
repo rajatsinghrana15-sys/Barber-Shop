@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Appointment | Barber Shop</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #121212;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .header {
+        margin: 30px 0;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        color: #ff5722;
+      }
+      .header p {
+        color: #888;
+        margin-top: 10px;
+      }
+
+      /* Calendly Container */
+      .calendly-container {
+        width: 100%;
+        max-width: 800px;
+        background: #1e1e1e;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+
+      /* Responsive Mobile Adjustment */
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Book Your Session</h1>
+      <p>Choose a time that works for you.</p>
+    </div>
+
+    <!-- Calendly Inline Widget -->
+    <div class="calendly-container">
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/vanshsinghrana15/hair-beard"
+        style="min-width: 320px; height: 700px"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+      ></script>
+    </div>
+  </body>
+</html>
