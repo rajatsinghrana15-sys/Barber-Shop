@@ -47,26 +47,30 @@
           style game.
         </p>
         <a href="appointment.html" class="cta-btn">Book Appointment</a>
-        <!-- Help Button -->
-        <button onclick="openPopup()" class="help-btn">? How to Book</button>
+        <div class="popup-content" style="text-align: left; font-size: 15px; line-height: 1.6; color: #fff;">
+    <span class="close-btn" onclick="closePopup()" style="color: #ff5722; font-size: 30px; float: right; cursor: pointer;">&times;</span>
+    <h2 style="color: #ff5722; text-align: center; margin-bottom: 20px;">How to Book</h2>
+    
+    <h4 style="color: #ff5722;">1. How to book an appointment?</h4>
+    <ol style="margin-left: 20px; margin-bottom: 15px;">
+        <li><strong>Select Service:</strong> Click on the "Book Appointment" button.</li>
+        <li><strong>Choose Date & Time:</strong> Select your preferred date and time from the calendar.</li>
+        <li><strong>Enter Details:</strong> Fill in your name, phone number, and email address.</li>
+        <li><strong>Confirm:</strong> Click "Schedule Event." Your appointment is now booked!</li>
+    </ol>
 
-        <!-- The Popup -->
-        <div id="helpPopup" class="popup">
-          <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>How to Book Your Session</h2>
-            <ol style="text-align: left; padding: 20px">
-              <li>Select the <strong>Service</strong> you want.</li>
-              <li>Pick a <strong>Date & Time</strong> from the calendar.</li>
-              <li>Enter your <strong>Name & Contact Info</strong>.</li>
-              <li>
-                Click <strong>Confirm</strong>—you'll get a confirmation email
-                instantly!
-              </li>
-            </ol>
-            <p>It's that simple! If you need help, call us directly.</p>
-          </div>
-        </div>
+    <h4 style="color: #ff5722;">2. How to Reschedule or Cancel?</h4>
+    <p>If you need to change your time or cancel the booking, follow these steps:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+        <li><strong>Check your Email:</strong> Open the confirmation email you received after booking.</li>
+        <li><strong>Use the Buttons:</strong> You will find <strong>"Reschedule"</strong> and <strong>"Cancel"</strong> buttons inside that email.</li>
+        <li><strong>Make Changes:</strong> Simply click the button to select a new time or cancel your booking instantly.</li>
+    </ul>
+
+    <p style="text-align: center; margin-top: 20px; font-style: italic;">
+        If you face any issues, please feel free to call or WhatsApp us!
+    </p>
+</div>
       </div>
       <div class="hero-image">
         <img

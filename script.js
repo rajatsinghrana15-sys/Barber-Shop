@@ -10,6 +10,14 @@ window.addEventListener('scroll', () => {
 
 console.log("Navbar script loaded successfully.");
 
+function openPopup() {
+    document.getElementById("helpPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("helpPopup").style.display = "none";
+}
+
 // This code will ensure that the menu toggles when clicked.
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
